@@ -9,4 +9,4 @@ steps:
     - '-'
 timeout: '86000s'
 options:
- machineType: 'e2-standard-8'
+ machineType: 'E2_STANDART_8'
